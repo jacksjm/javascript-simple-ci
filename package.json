@@ -1,0 +1,17 @@
+{
+  "name": "testes-automatizados-jest",
+  "version": "1.0.0",
+  "description": "Simple tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:jest --silent",
+    "test:jest": "node_modules/.bin/jest --env=jsdom ./src/test/*.test.js",
+    "test:eslint": "node_modules/.bin/eslint src/*.js --fix"
+  },
+  "author": "Jackson Machado",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "jest": "25.1.0"
+  }
+}
